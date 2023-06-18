@@ -11,7 +11,9 @@
             height="200"
           >
           <div class="card-body">
-            <h3>{{ product.title }}</h3>
+            <h3>
+              <a href="{{ product.url }}">{{ product.title }}</a>
+            </h3>
             <p>{{ product.price | money_with_currency }}</p>
           </div>
         </div>
