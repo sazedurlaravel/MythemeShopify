@@ -1,16 +1,29 @@
-<div class="container">
-  <div class="col-md-6 col-md-8">
-    <h1>Example Hero Title</h1>
-    <p>Hero Description here</p>
-    <button class="btn btn-secondary">Shop Now</button>
-  </div>
+<!-- homepage.liquid -->
+
+<div class="main-homepage">
+  <h1 class="heading">heading</h1>
+  <span class="text"
+    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, veritatis iure voluptatum sit explicabo perspiciatis
+    error quas labore tenetur consequatur illum saepe quae porr, accusantium enim ratione, maiores omnis tempora.</span
+  >
 </div>
 
 {% schema %}
 {
-  "name": "Hero",
-  "settings": [],
-  "presets": [],
-  "blocks": []
+  "presets": [
+    {
+      "category": "salad",
+      "name":"homepagesalad"
+    }
+  ],
+  "name": "homepage",
+  "settings": [
+    {
+      "type": "text",
+      "id": "homepage",
+      "label": "homepage",
+      "default": "text"
+    }
+  ]
 }
 {% endschema %}
