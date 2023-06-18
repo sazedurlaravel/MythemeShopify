@@ -5,9 +5,16 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "ea0679a5-2d60-41b4-910d-11a0f7b9363c": {
+      "type": "custom-liquid",
+      "settings": {
+        "title": "Example Heading"
+      }
     }
   },
   "order": [
-    "template-homepage"
+    "template-homepage",
+    "ea0679a5-2d60-41b4-910d-11a0f7b9363c"
   ]
 }
