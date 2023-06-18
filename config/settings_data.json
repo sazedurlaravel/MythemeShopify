@@ -1,6 +1,12 @@
 {
-  "current": "Default",
+  "current": {
+    "navbar_color": "#0a0909",
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
-    "Default": { }
+    "Default": {
+    }
   }
 }
