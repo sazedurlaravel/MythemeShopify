@@ -1,18 +1,27 @@
 {% schema %}
 {
-  "name": "Call to Actions",
-  "class": "index-section index-section--flush",
+  "name": "Slideshow",
+  "tag": "section",
+  "class": "slideshow",
   "settings": [
     {
-      "id": "cta_1_title",
       "type": "text",
-      "label": "CTA 1 Title",
-      "default": "Dryups Specials"
+      "id": "title",
+      "label": "Slideshow"
     }
   ],
-  "presets": [{
-    "name": "Call to Actions",
-    "category": "Text"
-  }]
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
 }
 {% endschema %}
