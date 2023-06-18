@@ -1,20 +1,23 @@
 <section class="container">
   <h2 class="text-center">{{ section.settings.title }}</h2>
-    <div class="row">
-      {% for product in collections[section.settings.featured_collection].products %}
-        <div class="col">
-          <div class="card" style="width:18rem">
-          <img src="{{product.featured_media.preview_image | img_url:'medium'}}" alt='{{product.title}}' width='' height=''>
-          <div class='card-body'>
+  <div class="row">
+    {% for product in collections[section.settings.featured_collection].products %}
+      <div class="col">
+        <div class="card" style="width:18rem">
+          <img
+            src="{{product.featured_media.preview_image | img_url:'medium'}}"
+            alt="{{product.title}}"
+            width=""
+            height=""
+          >
+          <div class="card-body">
             <h3>{{ product.title }}</h3>
             <p>{{ product.price | money_with_currency }}</p>
           </div>
         </div>
-        </div>   
-      {% endfor %}
-      
-    </div
-  
+      </div>
+    {% endfor %}
+  </div>
 </section>
 
 {% schema %}
