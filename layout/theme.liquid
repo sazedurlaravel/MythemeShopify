@@ -30,7 +30,7 @@
       {{ content_for_layout }}
     </main>
 
-    {{ 'bootstrap.min.js' | asset_url | script }}
-    {{ 'application.js' | asset_url | script }}
+    {{ 'bootstrap.min.js' | asset_url | script_tag }}
+    {{ 'application.js' | asset_url | script_tag }}
   </body>
 </html>
