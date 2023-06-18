@@ -1,6 +1,19 @@
 {
   "current": {
     "navbar_color": "#e72626",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "homepage": "Bangladesh"
+        }
+      }
+    },
     "content_for_index": [
 
     ]
