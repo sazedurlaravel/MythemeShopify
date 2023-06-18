@@ -30,7 +30,7 @@
       {{ content_for_layout }}
     </main>
 
-    {{ 'bootstrap.min.js' | asset_url | script_tag }}
-    {{ 'application.js' | asset_url | script_tag }}
+    <script src="{{ 'bootstrap.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'application.js' | asset_url }}" defer></script>
   </body>
 </html>
