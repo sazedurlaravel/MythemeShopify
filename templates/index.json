@@ -6,12 +6,6 @@
       "settings": {
       }
     },
-    "ea0679a5-2d60-41b4-910d-11a0f7b9363c": {
-      "type": "custom-liquid",
-      "settings": {
-        "title": "Example Heading"
-      }
-    },
     "481e7463-9bb7-4cd5-b8e5-6be9b88d38f6": {
       "type": "featured-collection",
       "settings": {
@@ -22,7 +16,6 @@
   },
   "order": [
     "template-homepage",
-    "ea0679a5-2d60-41b4-910d-11a0f7b9363c",
     "481e7463-9bb7-4cd5-b8e5-6be9b88d38f6"
   ]
 }
