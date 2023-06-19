@@ -1,6 +1,5 @@
 {% assign current_product = product.selected_or_first_available_variant %}
 {% assign product_image = current_product.featured_image | default: product.featured_image %}
-
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-12">
@@ -9,6 +8,9 @@
         src="{{product_image | img_url: 'large'}}"
         alt="{{product_image.alt}}"
         id="ProductImage">
+      {% for image in product.images %}
+        <img src="{{image.src | img_url: 'medium'}}" alt="{{image.alt}}">
+      {% endfor %}
     </div>
   </div>
 </div>
