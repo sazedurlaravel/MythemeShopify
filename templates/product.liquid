@@ -1,1 +1,44 @@
-<h2>This is product page</h2>
+{% comment %}
+product.liquid - Template for individual product pages
+{% endcomment %}
+
+{% assign product = current_variant.product %}
+{% assign variants = product.variants %}
+
+<div class="product">
+  <h1>{{ product.title }}</h1>
+
+  <div class="product-image">
+    <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
+  </div>
+
+  <div class="product-description">
+    {{ product.description }}
+  </div>
+
+  <div class="product-price">
+    {% if product.price_varies %}
+      <p>Starting at {{ product.price_min | money }}</p>
+    {% else %}
+      <p>{{ product.price | money }}</p>
+    {% endif %}
+  </div>
+
+  <div class="product-variants">
+    {% if variants.size > 1 %}
+      <label for="variant-select">Choose Variant:</label>
+      <select id="variant-select">
+        {% for variant in variants %}
+          <option value="{{ variant.id }}">{{ variant.title }}</option>
+        {% endfor %}
+      </select>
+    {% endif %}
+  </div>
+
+  <div class="product-add-to-cart">
+    <button
+      type="submit"
+      name="add"
+      id="add-to-cart">Add to Cart</button>
+  </div>
+</div>

@@ -1,30 +1,10 @@
 <section class="container">
-<<<<<<< HEAD
   {% for product in collections[section.settings.featured_collection].products %}
     <div class="card">
       <img src="{{product.featured_media.preview_image | img_url:"medium"}}" alt="{{product.title}}">
       <div class="card-body">
         <h3>{{ product.title }}</h3>
         <p>{{ product.price | money_with_currency }}</p>
-=======
-  <h2 class="text-center">{{ section.settings.title }}</h2>
-  <div class="row">
-    {% for product in collections[section.settings.featured_collection].products %}
-      <div class="col">
-        <div class="card" style="width:18rem">
-          <img
-            src="{{product.featured_media.preview_image | img_url:'medium'}}"
-            alt="{{product.title}}"
-            width=""
-            height="200">
-          <div class="card-body">
-            <h3>
-              <a href="{{ product.url }}">{{ product.title }}</a>
-            </h3>
-            <p>{{ product.price | money_with_currency }}</p>
-          </div>
-        </div>
->>>>>>> 856a465002950935bac80e2e5b7acc2e6266f1f1
       </div>
     {% endfor %}
   </div>
