@@ -49,7 +49,10 @@
           name="add"
           id="AddToCart"
           class="btn btn-secondary btn-lg w-100">Add To Cart</button>
-        {{ form | payment_button }}
+        {% if section.settings.dynamic_buttons_checkbox == true %}
+          {{ form | payment_button }}
+        {% endif %}
+
       {% endform %}
     </div>
   </div>
