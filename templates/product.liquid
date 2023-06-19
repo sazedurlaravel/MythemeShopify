@@ -26,7 +26,10 @@
 
       {% form 'product', product, class: "product-form", id: "AddToCartForm" %}
         <div class="mb-3">
-          <select name="id" id="productSelect">
+          <select
+            class="form-select"
+            name="id"
+            id="productSelect">
             {% for variant in product.variants %}
               <option value="{{variant.id}}">{{ variant.title }}</option>
             {% endfor %}
